@@ -271,7 +271,7 @@ footer {
     width: 50%;
     min-height: 300px;
     /* background: linear-gradient(269deg, #040404, transparent), url(../img/fotr-bg.jpg); */
-    background: url(../img/fotr-bg.jpg);
+    background: url(../Img/fotrBg.jpg);
     background-position: center, left;
     background-size: 100%;
     padding: 30px 0px;
