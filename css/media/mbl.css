@@ -1,0 +1,250 @@
+@media screen and (max-width:1250px) {
+    .nav-holder ul li {
+        margin-left: 10px;
+    }
+
+    .exp-slider-box {
+        display: grid;
+        grid-template-areas: "exp1 exp2"
+            "exp3 exp4";
+    }
+
+    .img-exp {
+        width: 350px;
+        height: 550px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    button.btn-go {
+        margin-right: -25px;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+
+    .hot-holder {
+        margin-bottom: 30px;
+
+    }
+
+    .exp-bg {
+        max-width: 1376px;
+        margin-left: 3px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:932px) {
+
+    html {
+        font-size: 85%;
+    }
+
+    section {
+        margin-bottom: 60px;
+    }
+
+    .img-exp {
+        width: 300px;
+        height: 440px;
+    }
+
+    .hot-box-wrapper {
+        flex-direction: column;
+    }
+
+    .hot-box {
+        display: grid;
+        grid-template-areas:
+            "hotImg hotImg hotImg hotInfo"
+            "hotBtn hotBtn hotBtn hotBtn";
+        width: 90%;
+        height: 100%;
+        margin-bottom: 50px;
+        grid-gap: 30px;
+    }
+
+    .hot-img {
+        grid-area: hotImg;
+    }
+
+    .hot-info {
+        grid-area: hotInfo;
+        height: 100%;
+        justify-content: center;
+    }
+
+    button.h-btn {
+        grid-area: hotBtn;
+    }
+
+    section#hot {
+        min-height: 600px;
+        background-color: #25181D;
+    }
+
+    .hot-header {
+        color: white;
+        margin: 30px 0px;
+    }
+
+    /*     
+        .hot-holder {
+            margin-bottom: 0px;
+            min-height: 630px;
+    
+            
+            
+        }
+
+    .hot-img {
+        margin-bottom: 50px;
+    }
+
+
+    section#hot {
+        height: 600px;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .abo-holder {
+        display: grid;
+        grid-template-areas:
+            "aboRight aboRight aboRight "
+            "aboLeft aboLeft aboLeft ";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .abo-left {
+        grid-area: aboLeft;
+        width: 100%;
+        height: 300px;
+        align-items: center;
+        margin-top: -90px;
+    }
+
+    .abo-right {
+        grid-area: aboRight;
+        width: 100%;
+        min-height: 450px;
+        padding: 20px;
+    }
+
+    section#about {
+        background: #25181D;
+    }
+
+    .f-left {
+        display: none;
+    }
+
+    h2.subs {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    input.E-ma {
+        height: 40px;
+        margin: auto;
+    }
+
+    button.btn-go {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        margin-right: -10px;
+    }
+}
+
+
+
+
+@media screen and (max-width:666px) {
+
+    .exp-slider-box {
+        grid-template-areas: "exp1"
+            "exp2"
+            "exp3"
+            "exp4";
+    }
+
+    .hot-box {
+        grid-template-areas:
+            "hotImg hotImg"
+            "hotInfo hotInfo"
+            "hotBtn hotBtn";
+    }
+
+    .abo-img {
+        width: 250px;
+    }
+
+    .abo-right {
+        height: 600px;
+        margin-top: -60px;
+    }
+
+    .abo-left {
+        padding: 50px 20px;
+    }
+
+    h2.subs {
+        padding: 0px 5px;
+        padding-left: 20px;
+    }
+
+    input.E-ma {
+        margin: 0px 5px;
+    }
+
+    button.btn-go {
+        padding: 0px 5px;
+        width: 22%;
+    }
+
+    .sub-wrapper {
+        width: 95%;
+    }
+
+    .f-right {
+        width: 100%;
+    }
+
+}
+
+
+/* ############ NAV BAR ########## */
+@media screen and (max-width:666px) {
+    li.burger button {
+
+        display: block;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+}
