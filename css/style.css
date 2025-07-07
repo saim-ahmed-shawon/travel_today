@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 :root {
     --blob: #25181D;
@@ -81,7 +84,7 @@ li.burger button {
 }
 
 
-li.burger button:hover {
+li.burger button:active {
     background: white;
     color: black;
 }
@@ -111,6 +114,7 @@ section#about {
 
 .abo-holder {
     display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -121,7 +125,10 @@ section#about {
 }
 
 .abo-img img:hover {
-    transform: scale(1.5);
+    transform: scale(2);
+}
+.abo-img img:active {
+    transform: scale(2);
 }
 
 
@@ -235,8 +242,19 @@ section#hot {
     align-items: center;
 }
 
+.hot-img{
+    overflow: hidden;
+}
+
 .hot-img img {
     width: 100%;
+    transition: all .3s ease;
+}
+.hot-img img:hover{
+    transform: scale(1.5);
+}
+.hot-img img:active{
+    transform: scale(1.5);
 }
 
 .hot-holder {
@@ -353,6 +371,11 @@ footer {
 
 .f-right ul {
     flex-direction: column;
+    padding-left: 0;
+}
+
+.f-right ul li {
+    text-align: center;
 }
 
 .f-right ul li a {
@@ -366,4 +389,183 @@ footer p {
     border-top: 1px solid white;
     padding: 15px;
     letter-spacing: 1px;
+}
+
+/* side nav */
+
+.tabNavWapper{
+    position: sticky;
+    top:0;
+    z-index: 5;
+}
+.tabNav{
+        display:none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background:#ffffffa7;
+        backdrop-filter: blur(5px);
+    }
+    #logo h2 a{
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: var(--blob);
+    }
+    #logo h2 a:hover{
+        color: var(--blob);
+    }
+    button.menu{
+        border: 2px solid;
+        outline: none;
+        background: var(--blob);
+        padding: 1rem;
+        border-radius:3px;
+    }
+    button.menu:active{
+        scale: 0.9;
+        transition: .1s ease-in;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+    }
+    .hidden{
+        display: none;
+    }
+    #linkList{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 40vw;
+        height: 100vh;
+        background: var(--blob);
+        z-index: 3;
+        transform: translateX(100%);
+        opacity:0;
+        transition: all .2s ease-in;
+        background: #25181df1;
+        backdrop-filter: blur(5px);
+        
+    }
+    .sideBar-open{
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+    }
+    #linkList ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .3rem;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    #linkList ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #linkList ul li a{
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    #linkList ul li a:active{
+        background: #1f141890;
+    }
+    #linkList ul li#cross{
+        position: absolute;
+        left: 10%;
+        top: 5%;
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight:400 ;
+        color: white;
+        cursor: pointer;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    #cross:active{
+        scale: .9;
+        transition: all .1s;
+    }
+
+/* TABLET */
+@media screen and (max-width:932px) {
+    .lgNav{
+        display: none;
+    }
+    .tabNav{
+        display: flex;
+    }
+    .abo-img{
+        width: 230px;
+        box-shadow: 0px 0px 20px 5px;
+    }
+    .abo-left p{
+        text-align: center;
+    }
+    .img-exp:active {
+    transform: scale(1.05);
+    }
+    .img-exp:hover {
+        transform: scale(1.05);
+    }
+    .subs{
+        padding-left: 10px;
+    }
+    
+    .f-right ul li{
+        text-align: center;
+    }
+    
+    .abo-holder{
+        gap: 0;
+    }
+    .abo-left{
+        padding-right: 0;
+        padding-left: 50px;
+    }
+    .abo-left p{
+        text-align: left;
+    }
+    
+    
+}
+
+
+/* MOBILE */
+@media screen and (max-width:665px) {
+    button.menu{
+        padding:.6rem;
+    }
+    #linkList{
+        width: 75vw;
+    }
+    #logo h2{
+        font-size: 3rem;
+    }
+    #linkList ul li a{
+        font-size: 2rem;
+    }
+    .img-exp:hover {
+        transform: scale(1.5);
+    }
+    .img-exp:active {
+        transform: scale(1.5);
+    }
+    .abo-left p{
+        text-align: center;
+    }
 }
