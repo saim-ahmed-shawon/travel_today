@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 }
-body{
+html, body {
     overflow-x: hidden;
 }
 
