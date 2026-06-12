@@ -339,6 +339,7 @@ button.h-btn:hover {
 
 .sub-wrapper h2 {
     color: white;
+    margin-bottom: 0px;
 }
 
 .sub-wrapper input {
